@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" Hugo + github 搭建个人静态博客\n前言: 此个人静态博客使用的域名为Github自行分配的域名，不需要建立服务器或者购买域名，建立过程借助了诸多大神的经验，仅发布此文章帮助自己记忆搭建过程，防止遗忘便于日后对网站进行进一步的更新和完善。 环境准备\n">
-<title>Hugo &#43; github 搭建个人静态博客 </title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="问的人比较多，我又比较懒，干脆做了一套样板间。">
+<title>Hugo | Hugo-stack-theme主题魔改版</title>
 
-<link rel='canonical' href='https://2024231087.github.io/2025/hugo--github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/'>
+<link rel='canonical' href='https://2024231087.github.io/2022/stack-theme-mod/'>
 
-<link rel="stylesheet" href="/scss/style.min.c3f5c11a3ddc69835d722d53a75d601b8441bdca5f5af8a74d9b365faac100c0.css"><meta property='og:title' content="Hugo + github 搭建个人静态博客 ">
-<meta property='og:description' content=" Hugo + github 搭建个人静态博客\n前言: 此个人静态博客使用的域名为Github自行分配的域名，不需要建立服务器或者购买域名，建立过程借助了诸多大神的经验，仅发布此文章帮助自己记忆搭建过程，防止遗忘便于日后对网站进行进一步的更新和完善。 环境准备\n">
-<meta property='og:url' content='https://2024231087.github.io/2025/hugo--github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/'>
+<link rel="stylesheet" href="/scss/style.min.c3f5c11a3ddc69835d722d53a75d601b8441bdca5f5af8a74d9b365faac100c0.css"><meta property='og:title' content="Hugo | Hugo-stack-theme主题魔改版">
+<meta property='og:description' content="问的人比较多，我又比较懒，干脆做了一套样板间。">
+<meta property='og:url' content='https://2024231087.github.io/2022/stack-theme-mod/'>
 <meta property='og:site_name' content='pixiu'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-24T16:26:29&#43;08:00'/><meta property='article:modified_time' content='2025-03-24T16:26:29&#43;08:00'/>
-<meta name="twitter:title" content="Hugo + github 搭建个人静态博客 ">
-<meta name="twitter:description" content=" Hugo + github 搭建个人静态博客\n前言: 此个人静态博客使用的域名为Github自行分配的域名，不需要建立服务器或者购买域名，建立过程借助了诸多大神的经验，仅发布此文章帮助自己记忆搭建过程，防止遗忘便于日后对网站进行进一步的更新和完善。 环境准备\n">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2022-02-13T03:02:52&#43;08:00'/><meta property='article:modified_time' content='2022-02-13T03:02:52&#43;08:00'/>
+<meta name="twitter:title" content="Hugo | Hugo-stack-theme主题魔改版">
+<meta name="twitter:description" content="问的人比较多，我又比较懒，干脆做了一套样板间。">
     <link rel="shortcut icon" href="/A.svg" />
 <style>
     :root {
@@ -314,6 +314,48 @@
     </form>
         
             
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#使用方式">使用方式</a></li>
+    <li><a href="#魔改内容">魔改内容</a></li>
+    <li><a href="#部分使用说明">部分使用说明</a>
+      <ol>
+        <li><a href="#引用样式短代码">引用样式短代码</a></li>
+        <li><a href="#友情链接使用方式">友情链接使用方式</a></li>
+        <li><a href="#修改页尾信息">修改页尾信息</a></li>
+      </ol>
+    </li>
+    <li><a href="#其他常见修改">其他常见修改</a>
+      <ol>
+        <li><a href="#设置博客头像">设置博客头像</a></li>
+        <li><a href="#删除博客头像">删除博客头像</a></li>
+        <li><a href="#修改博客背景颜色">修改博客背景颜色</a></li>
+        <li><a href="#指定首页分类标签颜色">指定首页分类标签颜色</a></li>
+        <li><a href="#配置各类图标">配置各类图标</a></li>
+        <li><a href="#其他参考">其他参考</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
         
             <section class="widget categories">
         <div class="widget-icon">
@@ -408,12 +450,24 @@
 
     <div class="article-details">
     
+    <header class="article-category">
+        
+            <a href="/categories/%E7%94%98%E6%99%AE%E5%9F%BA%E6%9C%AC%E5%8F%98%E5%BD%A2%E5%AE%9A%E5%BE%8B/" >
+                甘普基本变形定律
+            </a>
+        
+    </header>
+    
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/2025/hugo--github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">Hugo &#43; github 搭建个人静态博客 </a>
+            <a href="/2022/stack-theme-mod/">Hugo | Hugo-stack-theme主题魔改版</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            问的人比较多，我又比较懒，干脆做了一套样板间。
+        </h3>
         
     </div>
 
@@ -433,7 +487,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Mar 24, 2025</time>
+                <time class="article-time--published">Feb 13, 2022</time>
             </div>
         
 
@@ -449,7 +503,7 @@
 
                 
                 <time class="article-words">
-                    1814 字
+                    1932 字
                 </time>
             </div>
         
@@ -464,52 +518,129 @@
     <section class="article-content">
     
     
-    <blockquote>
-<p><strong>Hugo + github 搭建个人静态博客</strong></p></blockquote>
-<ol>
-<li>前言:
-此个人静态博客使用的域名为Github自行分配的域名，不需要建立服务器或者购买域名，建立过程借助了诸多大神的经验，仅发布此文章帮助自己记忆搭建过程，防止遗忘便于日后对网站进行进一步的更新和完善。</li>
-</ol>
-<hr>
-<ol start="2">
-<li>
-<p>环境准备</p>
-<p>2.1 Hugo下载：</p>
-<p>Hugo是一个静态网页搭建工具，并且在Windows下有单文件的版本，只要把文件下载下来并添加到环境变量就可以使用，相较于Hexo等要方便不少。当然还有一点很重要，Hugo有非常好看主题可以直接使用。
-<a class="link" href="https://gohugo.io/installation/"  target="_blank" rel="noopener"
-    >HUGO下载链接</a> 或者<a class="link" href="https://github.com/gohugoio/hugo"  target="_blank" rel="noopener"
-    >github-Hugo下载链接</a>
-具体操作可参考<a class="link" href="https://afeiroom.github.io/notes/hugo/01-install-hugo-windows/"  target="_blank" rel="noopener"
-    >Hugo下载指南</a></p>
-<p>2.2  Git下载：</p>
-<p>Git帮助我们在使用Hugo搭建好静态网站后将其推送到github上面进行免费的托管
-在<a class="link" href="https://git-scm.com/"  target="_blank" rel="noopener"
-    >Git下载链接</a>点击Download for windows 即可</p>
-<p>2.3  Hugo-stack主题环境配置：</p>
-<p>直接下载的github上大佬魔改后的版本<a class="link" href="https://github.com/iceyear/hugo-theme-stack-mod"  target="_blank" rel="noopener"
-    >Hugo-stack-theme主题魔改版bymantyke</a>，
-这即是一个完整的静态网页，省去许多自己搭建的步骤，后续可根据自己的需要再进行更改和完善。（<a class="link" href="https://stack.jimmycai.com/"  target="_blank" rel="noopener"
-    >原stack主题设计指南</a>）（<a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack"  target="_blank" rel="noopener"
-    >原版stack下载地址</a>）可以将其保存在与Hugo文件同一个文件夹下，建立一个Sites/blog.</p>
-</li>
-</ol>
-<hr>
-<ol start="3">
-<li>Github部署
-参考博主letere的博客撰写，附上<a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/"  target="_blank" rel="noopener"
-    >原博客链接</a>可以直接查看，博主写的非常详细。
-3.1常规部署</li>
-</ol>
+    <p>Codeberg 仓库地址：<a class="link" href="https://codeberg.org/iceyear"  target="_blank" rel="noopener"
+    >Ice Year</a>/<a class="link" href="https://codeberg.org/iceyear/hugo-theme-stack-mod"  target="_blank" rel="noopener"
+    >hugo-theme-stack-mod</a></p>
+<p>本主题由 <a class="link" href="https://github.com/CaiJimmy"  target="_blank" rel="noopener"
+    >CaiJimmy</a> 制作并<a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack"  target="_blank" rel="noopener"
+    >发布</a>，这个仓库是由 <a class="link" href="https://codeberg.org/iceyear"  target="_blank" rel="noopener"
+    >Ice Year</a> 基于 <a class="link" href="https://github.com/Mantyke/"  target="_blank" rel="noopener"
+    >Mantyke</a> 的魔改版本进行二次修改，结合了其他的一些参考资料并跟进官方 commits ，添加了一些特性，以及修复了一些 bug.</p>
+<br>
+<h2 id="使用方式">使用方式
+</h2>
+<p><strong>从零建立博客</strong>：Fork仓库到自己账号下，用Github 注册 Vercel，依次点击Overview → New Project → import刚刚Fork的仓库，设置<code>FRAMEWORK PRESET</code>为Hugo → 点击<code>Environment Variables</code>，设置<code>NAME</code>为<code>HUGO_VERSION</code>，<code>Value</code>为<code>Hugo版本号（如0.89.0）</code> → 点击Add → 点击Deploy，稍等十来秒即可部署完成。下载仓库到本地后使用Github Desktop更新文章。（注，本地预览需安装Hugo，具体请参照<a class="link" href="https://mantyke.icu/2021/hugo-build-blog/"  target="_blank" rel="noopener"
+    >Hugo | 一起动手搭建个人博客吧</a>相关内容）</p>
+<p><strong>旧博客更换主题</strong>：不同主题方式不同，推荐只保留原博客的content文件夹，迁移到本仓库content文件夹后再按情况调整。</p>
+<br>
+<h2 id="魔改内容">魔改内容
+</h2>
 <ul>
-<li>（1）如果没有个人的github账号，先前往【<a class="link" href="https://github.com/"  target="_blank" rel="noopener"
-    >Github官网</a>】注册一个github账号</li>
-<li>（2）前往【<a class="link" href="https://github.com/"  target="_blank" rel="noopener"
-    >Github官网</a>】，创建仓库 ，点击下图绿色案件<strong>New</strong>,并且将此仓库名命名为：<strong>{github用户名}.github.io</strong>，仓库选择为公开public模式。如果这是你搭建的第一个博客，这一步最好在前面直接用自己注册的Github用户名，这会避免很多Bug。</li>
-<li>（3）前往<code>Setting -&gt; Pages -&gt; Branch</code>选择main分支，然后保存，会自动开启 <strong>https://{github用户名}.github.io</strong> 的地址，这地址也是以后访问博客的地址，即Github托管并为你分配的地址域名。</li>
-<li>（4）回到hugo文件sites/blog中，按住cirl+鼠标右键，选择在Git bash下执行命令<code>hugo -D</code>，会生成 <strong>public</strong> 静态资源文件夹。</li>
-<li>（5）在 <strong>public</strong> 执行以下命令上传到github仓库上，第一次上传可能需要输入账号密码，逐行输入下列命令，如需输入账号密码会自动跳出网页，正确输入即可.</li>
+<li>调整文章页面为三栏显示（代码来自<a class="link" href="https://github.com/ShadowySpirits/hugo-theme-stack"  target="_blank" rel="noopener"
+    >ShadowySpirits</a>）</li>
+<li>文章按年份分类</li>
+<li>增加文章字数统计与站点总字数、总篇数显示</li>
+<li>修改全站字体为思源宋体</li>
+<li>增加一个引用短代码（短代码来自<a class="link" href="https://guanqr.com/"  target="_blank" rel="noopener"
+    >荷戟独彷徨</a>）</li>
+<li>添加一个友情链接页面并设置为双栏（友情链接代码来自<a class="link" href="https://bore.vip/archives/3bf3725e/#%E6%B7%BB%E5%8A%A0%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5-shortcodes"  target="_blank" rel="noopener"
+    >Bore</a>，双栏代码来自<a class="link" href="https://tech.randomwaves.space/posts/21-12-08-make-hugo-stack-theme-links-display-in-two-columns/"  target="_blank" rel="noopener"
+    >BB_Roin</a>）</li>
+<li>一系列基于个人美观喜好的CSS修改</li>
+<li>右侧栏增加Categories小部件</li>
 </ul>
+<br>
+<h2 id="部分使用说明">部分使用说明
+</h2>
+<h3 id="引用样式短代码">引用样式短代码
+</h3>
+<p>（注：实际使用请补全花括号</p>
 <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{&lt; quote &gt;}}}
+</span></span><span class="line"><span class="cl">三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云气自山中来，如群马奔突而至车座左右，苏轼一时好奇心起，开笼收云归家，作《攓云篇》。
+</span></span><span class="line"><span class="cl">{&lt; /quote &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+
+<blockquote class="quote">
+        <p>三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云气自山中来，如群马奔突而至车座左右，苏轼一时好奇心起，开笼收云归家，作《攓云篇》。</p></blockquote> 
+<br></p>
+<h3 id="友情链接使用方式">友情链接使用方式
+</h3>
+<p>友链头像放在<code>/assets/link-img</code>，友链数据放在<code>/data/links.json</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        &#34;title&#34;: &#34;Ice Year の位面&#34;,
+</span></span><span class="line"><span class="cl">        &#34;website&#34;: &#34;https://blog.iceyear.eu.org/&#34;,
+</span></span><span class="line"><span class="cl">        &#34;image&#34;: &#34;iceyear.webp&#34;,
+</span></span><span class="line"><span class="cl">     &#34;description&#34;: &#34;Il n&#39;y a pas de hasard, il n&#39;y a que des rendez-vous.&#34;
+</span></span><span class="line"><span class="cl">    },
+</span></span><span class="line"><span class="cl">	{
+</span></span><span class="line"><span class="cl">        &#34;title&#34;: &#34;友情链接2&#34;,
+</span></span><span class="line"><span class="cl">        &#34;website&#34;: &#34;&#34;,
+</span></span><span class="line"><span class="cl">        &#34;image&#34;: &#34;&#34;,
+</span></span><span class="line"><span class="cl">     &#34;description&#34;: &#34;&#34;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br>
+<h3 id="修改页尾信息">修改页尾信息
+</h3>
+<p>站点名称及建站时间请修改以下代码</p>
+<p>站点名称及链接：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">#位置：layout/partials/footer/footer.html</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">section</span> <span class="k">class</span><span class="o">=</span><span class="s2">&#34;copyleft&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&amp;</span><span class="n">copy</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">{{</span> <span class="k">if</span> <span class="ow">and</span> <span class="p">(</span><span class="o">.</span><span class="n">Site</span><span class="o">.</span><span class="n">Params</span><span class="o">.</span><span class="n">footer</span><span class="o">.</span><span class="n">since</span><span class="p">)</span> <span class="p">(</span><span class="n">ne</span> <span class="o">.</span><span class="n">Site</span><span class="o">.</span><span class="n">Params</span><span class="o">.</span><span class="n">footer</span><span class="o">.</span><span class="n">since</span> <span class="p">(</span><span class="ne">int</span> <span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">Format</span> <span class="s2">&#34;2006&#34;</span><span class="p">)))</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{{</span> <span class="o">.</span><span class="n">Site</span><span class="o">.</span><span class="n">Params</span><span class="o">.</span><span class="n">footer</span><span class="o">.</span><span class="n">since</span> <span class="p">}}</span> <span class="o">-</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{{</span> <span class="n">now</span><span class="o">.</span><span class="n">Format</span> <span class="s2">&#34;2006&#34;</span> <span class="p">}}</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&#34;https://stack-theme-mod.vercel.app/&#34;</span><span class="o">&gt;</span><span class="n">Example</span> <span class="n">Site</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span><span class="err">·</span><span class="o">&lt;</span><span class="n">i</span> <span class="k">class</span><span class="o">=</span><span class="s2">&#34;fas fa-bell&#34;</span><span class="o">&gt;&lt;/</span><span class="n">i</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">id</span><span class="o">=</span><span class="s2">&#34;days&#34;</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span><span class="n">Days</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{{</span><span class="o">$</span><span class="k">var</span> <span class="p">:</span><span class="o">=</span>  <span class="o">$</span><span class="n">scratch</span><span class="o">.</span><span class="n">Get</span> <span class="s2">&#34;total&#34;</span><span class="p">}}{{</span><span class="o">$</span><span class="k">var</span> <span class="o">=</span> <span class="n">div</span> <span class="o">$</span><span class="k">var</span> <span class="mf">100.0</span><span class="p">}}{{</span><span class="o">$</span><span class="k">var</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">Ceil</span> <span class="o">$</span><span class="k">var</span><span class="p">}}{{</span><span class="o">$</span><span class="k">var</span> <span class="o">=</span> <span class="n">div</span> <span class="o">$</span><span class="k">var</span> <span class="mf">10.0</span><span class="p">}}</span><span class="err">共书写了</span><span class="p">{{</span><span class="o">$</span><span class="k">var</span><span class="p">}}</span><span class="n">k字</span><span class="err">·共</span> <span class="p">{{</span> <span class="n">len</span> <span class="p">(</span><span class="n">where</span> <span class="o">.</span><span class="n">Site</span><span class="o">.</span><span class="n">RegularPages</span> <span class="s2">&#34;Section&#34;</span> <span class="s2">&#34;post&#34;</span><span class="p">)</span> <span class="p">}}</span><span class="err">篇文章</span><span class="o">&lt;/</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;&lt;</span><span class="n">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="n">section</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -517,75 +648,29 @@
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git init
-</span></span><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
-</span></span><span class="line"><span class="cl">git branch -M main
-</span></span><span class="line"><span class="cl">git remote add origin {你的github仓库地址}
-</span></span><span class="line"><span class="cl">git push -u origin main
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">#位置：layout/partials/footer/footer.html</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">var</span> <span class="n">s1</span> <span class="o">=</span> <span class="s1">&#39;2022-02-13&#39;</span><span class="p">;</span><span class="o">//</span><span class="err">设置为建站时间</span>
+</span></span><span class="line"><span class="cl"><span class="n">s1</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Date</span><span class="p">(</span><span class="n">s1</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="o">/-/</span><span class="n">g</span><span class="p">,</span> <span class="s2">&#34;/&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">s2</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Date</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">var</span> <span class="n">days</span> <span class="o">=</span> <span class="n">s2</span><span class="o">.</span><span class="n">getTime</span><span class="p">()</span> <span class="o">-</span> <span class="n">s1</span><span class="o">.</span><span class="n">getTime</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">var</span> <span class="n">number_of_days</span> <span class="o">=</span> <span class="n">parseInt</span><span class="p">(</span><span class="n">days</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">&#39;days&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">number_of_days</span><span class="p">;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>
-<p>（6）上传成功后访问 <strong>https://{github用户名}.github.io</strong>，发现成功搭建属于自己的Hugo博客</p>
-<p>3.2 Github Action自动部署</p>
-<p>自动部署的目的：帮助我们上传新的博客到Github</p>
-</li>
-<li>
-<p>（1）Github再创建一个新的仓库，用于存放Hugo的主文件（刚才创建的仓库实际上存放的是生成的public静态文件）此仓库可以选择为私密（private）</p>
-</li>
-<li>
-<p>（2）前往<code>Setttings -&gt; Developer Settings -&gt; Personal access tokens</code>，创建一个token(classic)</p>
-</li>
-</ul>
-<p><a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/createToken1.png"  target="_blank" rel="noopener"
-    ><img src="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/createToken1.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></a></p>
-<ul>
-<li>（3）token选择永不过期，并勾选 <strong>repo</strong> 和 <strong>workflow</strong> 选项</li>
-</ul>
-<p><a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/createToken2.png"  target="_blank" rel="noopener"
-    ><img src="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/createToken2.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></a></p>
-<ul>
-<li>（4）为保证安全，将生成的token，保存的仓库的变量中，前往<code>Settings -&gt; Secrets and variables -&gt; Actions</code>中设置</li>
-</ul>
-<p><a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/createToken3.png"  target="_blank" rel="noopener"
-    ><img src="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/createToken3.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></a></p>
-<p><a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/setToken1.png"  target="_blank" rel="noopener"
-    ><img src="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/setToken1.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></a></p>
-<ul>
-<li>（5）在hugo主文件自己创建一个<code>.github/workflows/xxxx.yaml</code>文件，将以下内容复制进去，想具体了解更多，可查看【<a class="link" href="https://docs.github.com/zh/actions"  target="_blank" rel="noopener"
-    >Github Action文档</a>】</li>
-</ul>
+</div><br>
+<h2 id="其他常见修改">其他常见修改
+</h2>
+<h3 id="设置博客头像">设置博客头像
+</h3>
+<p>位置：<code>/assets/img</code>，请将头像命名为<code>avatar.png</code>，替换原头像文件</p>
+<h3 id="删除博客头像">删除博客头像
+</h3>
+<p>位置：<code>/layouts/partials/sidebar/left.html</code>，注释或删去以下部分：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -612,77 +697,48 @@
 </span><span class="lnt">22
 </span><span class="lnt">23
 </span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">deploy</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 代码提交到main分支时触发github action</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">main</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v4</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Hugo</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v3</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;latest&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build Web</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo -D</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy Web</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v4</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">PERSONAL_TOKEN</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.你的token变量名 }}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">EXTERNAL_REPOSITORY</span><span class="p">:</span><span class="w"> </span><span class="l">你的github名/你的仓库名</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">PUBLISH_BRANCH</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">PUBLISH_DIR</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">commit_message</span><span class="p">:</span><span class="w"> </span><span class="l">auto deploy</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl">        <span class="p">{{</span> <span class="n">with</span> <span class="o">.</span><span class="n">Site</span><span class="o">.</span><span class="n">Params</span><span class="o">.</span><span class="n">sidebar</span><span class="o">.</span><span class="n">avatar</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{{</span> <span class="k">if</span> <span class="p">(</span><span class="n">default</span> <span class="bp">true</span> <span class="o">.</span><span class="n">enabled</span><span class="p">)</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">figure</span> <span class="k">class</span><span class="o">=</span><span class="s2">&#34;site-avatar&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&#34;{{ .Site.BaseURL | relLangURL }}&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{{</span> <span class="k">if</span> <span class="ow">not</span> <span class="o">.</span><span class="n">local</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                    <span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&#34;{{ .src }}&#34;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&#34;300&#34;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&#34;300&#34;</span> <span class="k">class</span><span class="o">=</span><span class="s2">&#34;site-logo&#34;</span> <span class="n">loading</span><span class="o">=</span><span class="s2">&#34;lazy&#34;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&#34;Avatar&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{{</span> <span class="k">else</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{{</span> <span class="o">$</span><span class="n">avatar</span> <span class="p">:</span><span class="o">=</span> <span class="n">resources</span><span class="o">.</span><span class="n">Get</span> <span class="p">(</span><span class="o">.</span><span class="n">src</span><span class="p">)</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                    
+</span></span><span class="line"><span class="cl">                    <span class="p">{{</span> <span class="k">if</span> <span class="o">$</span><span class="n">avatar</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{{</span> <span class="o">$</span><span class="n">avatarResized</span> <span class="p">:</span><span class="o">=</span> <span class="o">$</span><span class="n">avatar</span><span class="o">.</span><span class="n">Resize</span> <span class="s2">&#34;300x&#34;</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                        <span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&#34;{{ $avatarResized.RelPermalink }}&#34;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&#34;{{ $avatarResized.Width }}&#34;</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">height</span><span class="o">=</span><span class="s2">&#34;{{ $avatarResized.Height }}&#34;</span> <span class="k">class</span><span class="o">=</span><span class="s2">&#34;site-logo&#34;</span> <span class="n">loading</span><span class="o">=</span><span class="s2">&#34;lazy&#34;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&#34;Avatar&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{{</span> <span class="k">else</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{{</span> <span class="n">errorf</span> <span class="s2">&#34;Failed loading avatar from %q&#34;</span> <span class="o">.</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                <span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{{</span> <span class="n">with</span> <span class="o">$.</span><span class="n">Site</span><span class="o">.</span><span class="n">Params</span><span class="o">.</span><span class="n">sidebar</span><span class="o">.</span><span class="n">emoji</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                    <span class="o">&lt;</span><span class="n">span</span> <span class="k">class</span><span class="o">=</span><span class="s2">&#34;emoji&#34;</span><span class="o">&gt;</span><span class="p">{{</span> <span class="o">.</span> <span class="p">}}</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;/</span><span class="n">figure</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div><p>注意EXTERNAL_REPOSITORY填写的是常规部署时建立的那个仓库地址</p>
-<ul>
-<li>（6）在hugo主文件即在sites/blog地址下用记事本创建txt<code>.gitignore</code>文件，来避免提交不必要的文件，如果有其它不上传到仓库的文件可将其文件名编辑到此。</li>
-</ul>
+</div><h3 id="修改博客背景颜色">修改博客背景颜色
+</h3>
+<p>位置：<code>assets\scss\variables.scss</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># 自动生成的文件</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">public</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">resources</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">.hugo_build.lock</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">assets/jsconfig.json</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">--body-background: #f6f6f6;
+</span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>（7）将hugo的主文件上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面</li>
-</ul>
+</div><h3 id="指定首页分类标签颜色">指定首页分类标签颜色
+</h3>
+<p>位置：<code>content\categories</code>，创建分类同名文件夹后，在文件夹内创建<code>_index.md</code>文件，写入frontmatter</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -691,23 +747,56 @@
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git init
-</span></span><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
-</span></span><span class="line"><span class="cl">git branch -M main
-</span></span><span class="line"><span class="cl">git remote add origin {你的github仓库地址}
-</span></span><span class="line"><span class="cl">git push -u origin main
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">title: &#34;做猫贵在折腾&#34; //分类名称
+</span></span><span class="line"><span class="cl">description: &#34;简介 Blablabla&#34; //不需要可以删了
+</span></span><span class="line"><span class="cl">image: &#34;ffxiv_20210830_230509_817.png&#34; //分类题图，不需要也可以删了
+</span></span><span class="line"><span class="cl">style:
+</span></span><span class="line"><span class="cl">    background: &#34;#80aba9&#34; //分类标签底色
+</span></span><span class="line"><span class="cl">    color: &#34;#fff&#34;
+</span></span><span class="line"><span class="cl">---
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>注意：此处仓库地址为自动部署时建立的第二个仓库</p>
+</div><h3 id="配置各类图标">配置各类图标
+</h3>
+<p>图标放在：<code>/assets/icons</code>，svg格式，配置方式参考<a class="link" href="https://docs.stack.jimmycai.com/zh/configuration/custom-menu"  target="_blank" rel="noopener"
+    >文档</a></p>
+<br>
+<h3 id="其他参考">其他参考
+</h3>
+<p>其他我站修改及Hugo博客搭建教程可参见以下文章，作者代码水平为0，写作时间跨度较大，参考时务必注意：</p>
+<p><a class="link" href="https://mantyke.icu/2021/hugo-build-blog/"  target="_blank" rel="noopener"
+    >Hugo | 一起动手搭建个人博客吧</a></p>
+<p><a class="link" href="https://mantyke.icu/2021/f9f0ec87/"  target="_blank" rel="noopener"
+    >Hugo | 看中 Stack 主题的归档功能，搬家并做修改</a></p>
+<p><a class="link" href="https://mantyke.icu/2021/a08f1963/"  target="_blank" rel="noopener"
+    >Hugo | 另一篇 Stack 主题装修记录</a></p>
+<p><a class="link" href="https://mantyke.icu/2021/comment/"  target="_blank" rel="noopener"
+    >Hugo | 为 Blog 增加评论区</a></p>
+<p><a class="link" href="https://mantyke.icu/2021/47a5331b/"  target="_blank" rel="noopener"
+    >Hugo | 以正确姿势自动添加文章最后更新时间</a></p>
+<p><a class="link" href="https://mantyke.icu/2021/cf2cf0fb/"  target="_blank" rel="noopener"
+    >Hugo | 在文章中插入轮播图片</a></p>
+<p><a class="link" href="https://mantyke.icu/2022/stack-theme-furnish03/"  target="_blank" rel="noopener"
+    >Hugo | 第三篇 Stack 主题装修记录，堂堂再临！</a></p>
+<br>
+<p>如果您喜欢或使用这个魔改版主题成功搭建了自己的个人博客，欢迎到我的<a class="link" href="https://mantyke.icu/2022/stack-theme-mod/"  target="_blank" rel="noopener"
+    >个人博客</a>中留言告诉我，我会很开心的！</p>
+<br>
 
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/hugo/">Hugo</a>
+        
+    </section>
+
 
     
     <section class="article-copyleft">
@@ -758,6 +847,59 @@
 </aside>
 
      
+     
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="2024231087/2024231087.github.io"
+    data-repo-id="R_kgDON6zd6g"
+    data-category="Announcements"
+    data-category-id="DIC_kwDON6zd6s4Cnga2"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark');
+            }
+        }
+    })();
+</script>
+
     
 
     <footer class="site-footer">
